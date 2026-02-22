@@ -1,0 +1,24 @@
+
+version: 2
+
+models:
+    - name: dept_name
+      description: "this model contains department name for each department"
+      columns:
+          - name: empno
+            description: "empno is primary key of the table"
+            tests:
+                - unique
+                - not_null
+          - name: deptno
+            description: "deptno is primary key of the table"
+            tests:
+                - not_null
+
+    - name: dep_wise_highest_sal
+      description: "this model contains department wise highest salary"
+      columns:
+          - name: deptno
+            description: "deptno is primary key of the table"
+            tests:
+                - not_null
